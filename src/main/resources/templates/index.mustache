@@ -1,0 +1,44 @@
+{{>layout/header}}
+<h1>안녕하세요~!!</h1>
+<h2>저는 devName 호루루라고 합니다. 한 걸음 더 나아가는 개발자가 되고 싶습니다.
+<br>★Springboot + mybatis + mysql + mustache(jspX)★를 사용하여 개발하였습니다.
+    <br> 스프링부트를 잘 사용해보지 않았지만 이번에 한번 개발해 보았습니다. 감사합니다~
+</h2>
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-6">
+            <a href="/posts" role="button" class="btn btn-primary">글 등록</a>
+            {{#userName}}
+                Logged in as: <span id="user">{{userName}}</span>
+                <a href="/logout" class="btn btn-info active" role="button">Logout</a>
+            {{/userName}}
+            {{^userName}}
+                <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+                <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
+            {{/userName}}
+        </div>
+    </div>
+    <br>
+    <!-- 목록 출력 영역 -->
+    <table class="table table-horizontal table-bordered">
+        <thead class="thead-strong">
+        <tr>
+            <th>게시글번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>최종수정일</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        {{#list}}
+            <tr>
+                <td>{{idx}}</td>
+                <td><a href="/posts/update/{{idx}}">{{title}}</a></td>
+                <td>{{author}}</td>
+                <td>{{modifiedDate}}</td>
+            </tr>
+        {{/list}}
+        </tbody>
+    </table>
+</div>
+{{>layout/footer}}
