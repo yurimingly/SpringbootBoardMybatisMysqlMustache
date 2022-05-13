@@ -16,10 +16,11 @@ public interface BoardMapper {
     void insertBoard(BoardDto dto) throws Exception;
 
     //게시글 보기
-    BoardDto findById(int idx) throws Exception;
+    BoardDto findByIdx(int idx) throws Exception;
 
     //게시글 수정
     void updateBoard(BoardDto dto) throws Exception;
-
+    
+    //게시글 삭제
     void deleteBoard(int idx) throws Exception;
 }

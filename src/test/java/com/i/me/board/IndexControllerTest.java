@@ -1,4 +1,4 @@
-package com.i.me;
+package com.i.me.board;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

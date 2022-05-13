@@ -24,8 +24,8 @@ public class BoardServiceImpl implements BoardService {
 
     //게시물 보기
     @Override
-    public BoardDto findById(int idx) throws Exception {
-        return BoardMapper.findById(idx);
+    public BoardDto findByIdx(int idx) throws Exception {
+        return BoardMapper.findByIdx(idx);
     }
 
 

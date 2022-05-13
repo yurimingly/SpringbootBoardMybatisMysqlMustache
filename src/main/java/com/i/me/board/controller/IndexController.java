@@ -40,7 +40,7 @@ public class IndexController {
     public ModelAndView postsUpdate(@PathVariable int idx,Model model) throws Exception {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("posts-update");
-        mav.addObject("post",boardService.findById(idx));
+        mav.addObject("post",boardService.findByIdx(idx));
 
         return mav;
     }

@@ -12,7 +12,7 @@
     </select>
 
     <!-- 게시글 보기-->
-    <select id ="findById" resultType="com.i.me.board.dto.BoardDto">
+    <select id ="findByIdx" resultType="com.i.me.board.dto.BoardDto">
         select *
         from board
         where idx = #{idx}
