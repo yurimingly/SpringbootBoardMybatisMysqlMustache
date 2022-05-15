@@ -4,6 +4,7 @@ import com.i.me.board.boardService.PostsService;
 import com.i.me.board.dto.BoardDto;
 import com.i.me.board.mapper.BoardMapper;
 import com.sun.media.jfxmedia.logging.Logger;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.ILoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

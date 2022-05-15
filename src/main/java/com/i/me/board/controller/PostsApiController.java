@@ -33,5 +33,4 @@ public class PostsApiController {
         postsService.deleteBoard(idx);
         return idx;
     }
-
 }

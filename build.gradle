@@ -19,21 +19,21 @@ repositories {
 }
 
 dependencies {
-
     implementation 'org.springframework.boot:spring-boot-starter-web'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
     runtimeOnly 'mysql:mysql-connector-java:8.0.25'
+    implementation 'org.springframework.boot:spring-boot-starter-mustache'
 
     //속성 기본 설정 : 개발 시점에 도달 시점, 자동 재시작: 빠른 실행, Live Reload : JS 파일을 수정하기만 자동으로 브라우저가 새로고침
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
-
+    //lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+    //test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    implementation 'org.springframework.boot:spring-boot-starter-mustache'
-
-
+    //login
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
 }
 
 tasks.named('test') {
