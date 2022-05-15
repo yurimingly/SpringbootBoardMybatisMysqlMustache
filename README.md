@@ -3,6 +3,9 @@
 이번 커밋은 SpringSecurity + Springboot + Mybatis + Mysql + Mustache 를 이용하여 만들어 본 게시판입니다~
 회원가입 및 로그인은 google Cloud Platform의 로그인 API를 이용하여 만들어 보았습니다.
 
+https://youtu.be/S5DmUKlFxuw
+유튜브 시연영상 추가
+
 SPRINGBOOT 2.6.7
 GRADLE 7.4.1
 JAVA 8
