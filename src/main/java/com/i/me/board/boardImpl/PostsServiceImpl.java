@@ -25,7 +25,7 @@ public class PostsServiceImpl implements PostsService {
 
     @Override
     public void updateBoard(@RequestBody BoardDto dto) throws Exception {
-        System.out.println("IMPL - " + "BoardDto"+ dto);
+        //System.out.println("IMPL - " + "BoardDto"+ dto);
         BoardMapper.updateBoard(dto);
     }
 

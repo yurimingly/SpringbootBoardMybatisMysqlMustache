@@ -23,7 +23,7 @@ public class PostsApiController {
     //업데이트
     @PatchMapping("/posts/update/{idx}")
     public void update(@PathVariable("idx") int idx, @RequestBody BoardDto dto) throws Exception {
-        System.out.println("Controller - idx : " +idx + "BoardDto"+ dto);
+        //System.out.println("Controller - idx : " +idx + "BoardDto"+ dto);
         postsService.updateBoard(dto);
     }
     
